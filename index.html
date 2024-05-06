@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="sidebar">
+  <div class="sidebar">
+    <img class="sidebar__logo-img" src="" alt="">
+    <h1 class="sidebar__logo-title">Dashboard</h1>
+  </div>
+  <nav>
+    <ul class="sidebar__nav__links">
+      <li class="sidebar__nav__link"><a href="#"><i class="ri-home-heart-fill"></i><span>Home</span></a></li>
+      <li class="sidebar__nav__link"><a href="#"><i class="ri-profile-line"></i><span>Profile</span></a></li>
+      <li class="sidebar__nav__link"><a href="#"><i class="ri-message-3-fill"></i><span>Messages</span></a></li>
+      <li class="sidebar__nav__link"><a href="#"><i class="ri-history-line"></i><span>History</span></a></li>
+      <li class="sidebar__nav__link"><a href="#"><i class="ri-list-check-3"></i><span>Tasks</span></a></li>
+      <li class="sidebar__nav__link"><a href="#"><i class="ri-group-fill"></i><span>Comminities</span></a></li>
+    </ul>
+    <ul class="sidebar__nav__links">
+      <li class="sidebar__nav__link"><a href="#"><i class="ri-settings-5-fill"></i><span>Settings</span></a></li>
+      <li class="sidebar__nav__link"><a href="#"><i class="ri-question-fill"></i><span>Support</span></a></li>
+      <li class="sidebar__nav__link"><a href="#"><i class="ri-shield-check-fill"></i><span>Privacy</span></a></li>
+    </ul>
+  </nav>
+</section>
+<main>
+  <header>
+    <div class="header__top">
+      <form class="header__top__left" action="">
+        <i class="ri-search-2-line"></i>
+        <input type="search" name="site search" id="search">
+      </form>
+      <div class="header__top__right">
+        <i class="ri-notification-2-fill"></i>
+        <img class="user-icon" src="images/user-icon-main.jpg" alt="user icon">
+        <span>OS Webdevelop</span>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__bottom__left">
+        <img class="user-icon" src="images/user-icon-main.jpg" alt="user icon">
+        <div class="header__bottom__left__title">
+          <span>Hi there,</span>
+          <h4>OS Webdevelop</h4>
+        </div>
+      </div>
+      <div class="header__bottom__right">
+        <button class="btn"><a href="#">New</a></button>
+        <button class="btn"><a href="#">Upload</a></button>
+        <button class="btn"><a href="#">Share</a></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__projects__wrapper">
+      <h2 class="hero__projects__title title">Your Projects</h2>
+      <div class="hero__projects__card__container container">
+        <div class="hero__projects__card card">
+          <div class="card__text">
+            <h5 class="card__title">Super Cool Project</h5>
+            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi magni, unde id in ut doloremque dignissimos fugit explicabo ad consequuntur atque tenetur vitae fugiat, ipsum minima illo? Magni esse, corporis quis eum soluta asperiores repudiandae voluptatum dolores aliquam, vel ipsa pariatur voluptate similique? Tempora, debitis.</p>  
+          </div>
+        <div class="card__buttons">
+          <i class="ri-star-line"></i>
+          <i class="ri-eye-line"></i>
+          <i class="ri-git-fork-line"></i>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__announcements__wrapper">
+      <h2 class="hero__announcements__title title">Announcements</h2>
+      <div class="hero__announcements__card__container container">
+        <div class="hero__announcements__card card">
+          <h5 class="card__title">Super Cool Project</h5>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsum soluta doloribus laboriosam illum aliquam?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__trending__wrapper">
+      <h2 class="hero__trending__title title">Trending</h2>
+      <div class="hero__trending__card__container container">
+        <div class="hero__trending__card card">
+          <img class="user-icon" src="images/user-icon-1.jpg" alt="user icon">
+          <div>
+            <span class="user-name">@peepo</span>
+            <span class="user-title">World Greatest frog</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- <footer></footer> -->
+</body>
+</html>
