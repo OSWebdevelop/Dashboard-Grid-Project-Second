@@ -1,10 +1,11 @@
 :root{
   /* font color */
-  --primary-dis:#999;
-  --primary-dis:#999;
-  --primary-dis:#999;
+  --primary-light-purple:#e5e6eb;
+  --primary-bright-purple:#7062b9;
+  --primary-dark-purple:#6458a5;
+  --primary-bright-pink:#fd90b3;
 
-  --neutral-dis:#999;
+  --neutral-white:#fff;
   --neutral-dis:#999;
   --neutral-dis:#999;
   --neutral-dis:#999;
@@ -15,7 +16,7 @@
   --font-size-large:3.5rem;
   --font-size-extra-big:3rem;
   --font-size-big:2.875rem;
-  --font-size-medi:2.3rem;
+  --font-size-medi:2.2rem;
   --font-size-medi-normal:1.5rem;
   --font-size-normal:1.2rem;
   --font-size-small:0.775rem;
@@ -49,6 +50,8 @@ img, svg{
 body{
   font-family: "Quicksand", sans-serif;
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 i{
   font-size: var(--font-size-medi);
@@ -59,8 +62,8 @@ i{
   border-radius: 100%;
 }
 .btn{
-  color: #fff;
-  background-color: rgb(0, 174, 255);
+  color: var(--neutral-white);
+  background-color: var(--primary-bright-purple);
   font-size: var(--font-size-normal);
   font-weight: 600;
   padding: 0.675em 1.6em;
@@ -68,3 +71,34 @@ i{
   border: none;
   margin-left: 1rem;
 }
+/* sidebar */
+.sidebar{
+  background-color: var(--primary-dark-purple);
+  color: var(--neutral-white);
+  padding: 0 1.5rem;
+}
+.sidebar__logo{
+  margin-bottom: 2.5rem;
+}
+.sidebar__logo i{
+  font-size: var(--font-size-big);
+}
+.sidebar__logo h1{
+  font-size: var(--font-size-medi);
+  display: inline-block;
+}
+.nav-top{
+  margin-bottom: 2.5rem;
+}
+.sidebar__nav__link{
+  margin-bottom: var(--font-size-small);
+}
+.sidebar__nav__link i{
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+.sidebar__nav__link span{
+  font-weight: 600;
+}
+/* hero */
+/* header */
