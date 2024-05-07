@@ -46,6 +46,7 @@ img, svg{
   padding-inline: 0.5rem;
 } */
 body{
+  color: var(--primary-dark-purple);
   font-family: "Quicksand", sans-serif;
   height: 100vh;
   display: grid;
@@ -53,6 +54,10 @@ body{
 }
 i{
   font-size: var(--font-size-medi-normal);
+}
+.title{
+  font-size: var(--font-size-medi-normal);
+  margin-bottom: 1rem;
 }
 .user-icon{
   width: 50px;
@@ -68,6 +73,12 @@ i{
   border-radius: 77777777px;
   border: none;
   margin-left: 1rem;
+}
+.card{
+  background-color: var(--neutral-white);
+  padding: var(--padding-gap);
+  border-radius: 20px;
+  width: 100%;
 }
 /* sidebar */
 .sidebar{
@@ -111,7 +122,6 @@ header{
   padding: 1.5rem 0;
 }
 .header__top__left i{
-  color: var(--primary-dark-purple);
   margin-right: var(--padding-gap);
 }
 .header__top__left{
@@ -121,7 +131,6 @@ header{
 }
 .header__top__left #search{
   background-color: var(--primary-light-purple);
-  color: var(--primary-dark-purple);
   font-size: var(--font-size-normal);
   border-radius: 777777px;
   border: none;
@@ -130,7 +139,6 @@ header{
   width: 100%;
 }
 .header__top__right{
-  color: var(--primary-dark-purple);
   display: flex;
   align-items: center;
   gap: var(--padding-gap);
@@ -154,4 +162,43 @@ header{
 }
 .header__bottom__left h4{
   font-size: var(--font-size-medi-normal);
+}
+/* hero */
+/* content */
+.hero{
+  background-color: var(--primary-light-purple);
+  padding: var(--padding-gap);
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: repeat(2,1fr);
+  gap: var(--padding-gap);
+}
+/* projects */
+.hero__projects__wrapper{
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.hero__projects__card__container{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(450px,1fr));
+  grid-template-rows: repeat(3,minmax(200px,350px));
+  gap: var(--padding-gap);
+}
+.hero__projects__card{
+  border-left: 10px solid var(--primary-bright-pink);
+  display: flex;
+  flex-direction: column;
+}
+.card__text{
+  overflow: auto;
+}
+.card__buttons{
+  align-self: flex-end;
+}
+.card__buttons i:not(:last-child){
+  margin-right: var(--padding-gap);
+}
+/* trending */
+.hero__trending__wrapper{
+  grid-column: 2/3;
 }
