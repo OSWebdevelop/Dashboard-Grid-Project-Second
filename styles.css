@@ -79,6 +79,13 @@ i{
   padding: var(--padding-gap);
   width: 100%;
 }
+.card__title{
+  font-size: 1.3rem;
+}
+.card__descriptionm .user-title{
+  color: var(--primary-bright-purple);
+  font-size: 1.1675rem;
+}
 .container{
   border-radius: 20px;
   background-color: var(--neutral-white);
@@ -205,18 +212,29 @@ header{
 }
 /* announcements */
 .hero__announcements__wrapper{
+  overflow: auto;
   grid-column: 2/3;
   grid-row: 1/2;
-}
-/* trending */
-.hero__trending__wrapper{
-  grid-column: 2/3;
-  grid-row: 2/3;
-  overflow: auto;
 }
 .hero__announcements__card{
   padding: 1.5rem 0;
 }
 .hero__announcements__card:not(:last-child){
   border-bottom: 1px solid var(--primary-light-purple);
+}
+/* trending */
+.hero__trending__wrapper{
+  overflow: auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.hero__trending__card{
+  padding: 1rem 0;
+  gap: var(--padding-gap);
+  display: flex;
+  align-items: center;
+}
+.user-name{
+  display: block;
+  font-weight: 600;
 }
