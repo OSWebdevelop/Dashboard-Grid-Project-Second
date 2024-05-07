@@ -21,6 +21,7 @@
   /* gap */
   --padding-gap:1.5rem;
 }
+/* reset */
 *,
 *::before,
 *::after{
@@ -40,11 +41,7 @@ a{
 img, svg{
   max-width: 100%;
 }
-/* .container{
-  width: 100%;
-  margin-inline: auto;
-  padding-inline: 0.5rem;
-} */
+/* utility */
 body{
   color: var(--primary-dark-purple);
   font-family: "Quicksand", sans-serif;
@@ -76,19 +73,24 @@ i{
 }
 .card{
   background-color: var(--neutral-white);
+  box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.05);
   padding: var(--padding-gap);
   width: 100%;
+}
+.card__description{
+  font-size: 1.075rem;
 }
 .card__title{
   font-size: 1.3rem;
 }
-.card__descriptionm .user-title{
+.user-title{
   color: var(--primary-bright-purple);
-  font-size: 1.1675rem;
+  font-size: 1.075rem;
 }
 .container{
-  border-radius: 20px;
   background-color: var(--neutral-white);
+  box-shadow: 6px 10px 5px 0px rgba(0,0,0,0.05);
+  border-radius: 20px;
   padding: var(--padding-gap);
 }
 /* sidebar */
@@ -179,10 +181,21 @@ header{
 .hero{
   background-color: var(--primary-light-purple);
   padding: var(--padding-gap);
+
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: 3fr 1fr;
   gap: var(--padding-gap);
+}
+.hero__projects__wrapper,
+.hero__announcements__wrapper,
+.hero__trending__wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.hero__projects__card__container,
+.hero__announcements__card__container,
+.hero__trending__card__container {
+  overflow-y: auto;
 }
 /* projects */
 .hero__projects__wrapper{
@@ -191,9 +204,9 @@ header{
 }
 .hero__projects__card__container{
   display: grid;
-  grid-template-columns: repeat(2,minmax(450px,1fr));
-  grid-template-rows: repeat(3,minmax(200px,350px));
+  grid-template-columns: repeat(2,minmax(350px,1fr));
   gap: var(--padding-gap);
+  align-items: stretch; 
 }
 .hero__projects__card{
   border-left: 10px solid var(--primary-bright-pink);
@@ -212,7 +225,7 @@ header{
 }
 /* announcements */
 .hero__announcements__wrapper{
-  overflow: auto;
+  height: auto;
   grid-column: 2/3;
   grid-row: 1/2;
 }
@@ -224,7 +237,7 @@ header{
 }
 /* trending */
 .hero__trending__wrapper{
-  overflow: auto;
+  height: auto; 
   grid-column: 2/3;
   grid-row: 2/3;
 }
@@ -233,6 +246,10 @@ header{
   gap: var(--padding-gap);
   display: flex;
   align-items: center;
+}
+.hero__trending__card .user-icon{
+  width: 60px;
+  height: auto;
 }
 .user-name{
   display: block;
