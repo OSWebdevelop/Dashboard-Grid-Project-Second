@@ -77,8 +77,12 @@ i{
 .card{
   background-color: var(--neutral-white);
   padding: var(--padding-gap);
-  border-radius: 20px;
   width: 100%;
+}
+.container{
+  border-radius: 20px;
+  background-color: var(--neutral-white);
+  padding: var(--padding-gap);
 }
 /* sidebar */
 .sidebar{
@@ -186,6 +190,7 @@ header{
 }
 .hero__projects__card{
   border-left: 10px solid var(--primary-bright-pink);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -198,7 +203,20 @@ header{
 .card__buttons i:not(:last-child){
   margin-right: var(--padding-gap);
 }
+/* announcements */
+.hero__announcements__wrapper{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
 /* trending */
 .hero__trending__wrapper{
   grid-column: 2/3;
+  grid-row: 2/3;
+  overflow: auto;
+}
+.hero__announcements__card{
+  padding: 1.5rem 0;
+}
+.hero__announcements__card:not(:last-child){
+  border-bottom: 1px solid var(--primary-light-purple);
 }
