@@ -6,7 +6,7 @@
   /* font color */
   --primary-light-purple:#edf0f1;
   --primary-skyblue:rgb(130, 192, 232);
-  --primary-light-skyblue:rgb(130, 192, 232);
+  --primary-dark-skyblue:rgb(150, 207, 245);
   --primary-bright-pink:#f599be;
 
   --neutral-white:#fff;
@@ -89,6 +89,7 @@ i{
   width: 100%;
 }
 .card__description{
+  color: var(--primary-dark-skyblue);
   font-size: var(--font-size-section-paragraph);
 }
 .card__title{
