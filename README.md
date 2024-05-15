@@ -14,7 +14,7 @@ Thanks for checking out my admin dashboard project! If you have any advice, I wo
 
 ## Assets from
 
-- ** [Fontawesome Icons](https://fontawesome.com/kits)**
-- ** [Remixicons](https://remixicon.com/)**
-- ** [Flaticons](https://www.flaticon.com/)**
-- ** [Great Old Ones by Dan Velez](https://thedanvelez.artstation.com/projects/rkzA2) **
+- [Fontawesome Icons](https://fontawesome.com/kits)
+- [Remixicons](https://remixicon.com/)
+- [Flaticons](https://www.flaticon.com/)
+- [Great Old Ones by Dan Velez](https://thedanvelez.artstation.com/projects/rkzA2)
