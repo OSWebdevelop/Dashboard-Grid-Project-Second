@@ -1,6 +1,6 @@
 # Dashboard-Grid-Project
-## [Preview](https://oswebdevelop.github.io/Dashboard-Grid-Project/)
-[![image.png](https://i.postimg.cc/3NLbhmMm/image.png)](https://postimg.cc/q63GXtvv)
+## [Preview](https://oswebdevelop.github.io/Dashboard-Grid-Project-Second/)
+[![image.png](https://i.postimg.cc/VLvdX1df/image.png)](https://postimg.cc/nC8Fty4g)
 
 Thanks for checking out my admin dashboard project! If you have any advice, I would appreciate it.
 
@@ -11,3 +11,10 @@ Thanks for checking out my admin dashboard project! If you have any advice, I wo
 - **CSS Custom**
 - **CSS Grid**
 - **CSS Flexbox**
+
+## Assets from
+
+- ** [Fontawesome Icons](https://fontawesome.com/kits)**
+- ** [Remixicons](https://remixicon.com/)**
+- ** [Flaticons](https://www.flaticon.com/)**
+- ** [Great Old Ones by Dan Velez](https://thedanvelez.artstation.com/projects/rkzA2) **
